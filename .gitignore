@@ -1,0 +1,4 @@
+.idea
+### Composer template
+composer.phar
+/vendor/

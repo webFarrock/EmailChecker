@@ -1,0 +1,9 @@
+{
+  "name": "webfarrock/email-checker",
+  "description": "Package to check email",
+  "autoload": {
+    "psr-4": {
+      "WebFarrock\\EmailChecker\\": "src/"
+    }
+  }
+}
