@@ -12,7 +12,9 @@ class RuleMxRecord implements RuleInterface
     {
         $hostname = explode('@', $email)[1];
 
-        if (false == getmxrr($hostname, $mxhosts)) {
+        getmxrr($hostname, $mxhosts);
+
+        if (empty($mxhosts)) {
             throw new InvalidEmailException('Не пройдена проверка MX записи');
         }
 
